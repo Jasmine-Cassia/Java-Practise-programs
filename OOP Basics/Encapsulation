@@ -1,0 +1,21 @@
+
+class Employee
+{
+    private int EmpID;
+    public void setID(int id){
+        this.EmpID = id;
+    }
+    public int getID(){
+        return this.EmpID;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Employee obj = new Employee();
+	    obj.setID(90);
+	    System.out.println("The Employee ID is "+obj.getID());
+	}
+}
+	    
+		
