@@ -1,0 +1,19 @@
+// Method overloading
+//This allows us to have more than one methods with same name in a class that differs in signature.
+class Example
+{
+    public void display(int n1){
+        System.out.println(n1);
+    }
+    public void display(int n1, int n2){
+        System.out.println(n1 + " " + n2);
+    }
+}
+public class Main 
+{
+    public static void main(String args[]){
+        Example obj = new Example();
+        obj.display(5);
+        obj.display(5, 10);
+    }
+}
