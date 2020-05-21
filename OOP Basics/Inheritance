@@ -1,6 +1,9 @@
 class Animal
 {
     String common_name = "Animal";
+    public void make_noise(){
+        System.out.println("Animal makes noise");
+    }
     public void eat(){
         System.out.println("Animal is eating");
     }
@@ -27,6 +30,7 @@ class Dog extends Animal
         obj.eat();
         obj.sleep();
         obj.bark();
+        obj.make_noise();
     }
 }
         
