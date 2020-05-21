@@ -1,0 +1,22 @@
+//It is also known as Dynamic Method Dispatch. Dynamic polymorphism is a process in which a call to an overridden method is resolved at runtime rather, thats why it is called runtime polymorphism.
+class Animal
+{
+    void display(){
+        System.out.println("Animal makes sound");
+    }
+}
+public class Dog extends Animal
+{
+    void display(){
+        System.out.println("Dog makes sound");
+    }
+    public static void main(String args[]){
+        Dog obj = new Dog();
+        obj.display();//Dog method
+        Animal obj1 = new Animal();
+        obj1.display();//Animal method
+        Animal obj2 = new Dog();
+        obj2.display();// Dog method
+        
+    }
+}
