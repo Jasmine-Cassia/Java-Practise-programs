@@ -1,0 +1,32 @@
+package com.Shruthi;
+import java.awt.*;
+import java.util.Scanner;
+public class DivideString {
+    public static void main(String args[]){
+        String str;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the string: ");
+        str = sc.next();
+        int len = str.length();
+        System.out.println("Enter the no of parts to be divided: ");
+        int n = sc.nextInt();
+        int chars = len / n;
+        if (len % n != 0){
+            System.out.println("Sorry, cannot be divided into that no of parts");
+        }
+        else{
+            String[] equal_strings = new String[n];
+            int temp = 0;
+            for(int i = 0; i < len; i = i + chars){
+                String part_str = str.substring(i, i + chars);
+                equal_strings[temp] = part_str;
+                temp++;
+
+            }
+            System.out.println("The equal parts of the string are: ");
+            for(int i = 0; i < equal_strings.length ;i++){
+                System.out.println(equal_strings[i]);
+            }
+        }
+    }
+}
