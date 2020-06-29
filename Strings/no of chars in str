@@ -1,0 +1,19 @@
+package com.Shruthi;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        String str;
+        Scanner sc = new Scanner(System.in);
+        str = sc.nextLine();
+        int count = 0;
+        for(int i = 0; i < str.length();i++){
+            if (str.charAt(i) != ' '){
+                count++;
+            }
+        }
+        System.out.println("The number of chars in "+str+"is "+count);
+    }
+}
